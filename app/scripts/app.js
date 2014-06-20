@@ -24,6 +24,18 @@
         templateUrl: 'views/posts.html',
         controller: 'PostsCtrl'
       })
+      .when('/posts/:postId', {
+        templateUrl: 'views/showPost.html',
+        controller: 'PostViewCtrl'
+      })
+      .when('/register/', {
+        templateUrl: 'views/register.html',
+        controller: 'AuthCtrl'
+      })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'AuthCtrl'
+      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
